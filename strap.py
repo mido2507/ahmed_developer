@@ -33,8 +33,7 @@ st.color_picker("colors")
 """ df = open('d:\\jpture.csv',"r")
 print(df.read()) """
 #df=open(r'jpture.csv',encoding="utf-8")  
-ff=sns.load_dataset('taxis')
-st.write(ff)
+
 #df=pd.read_csv(r'c:/mido.csv',encoding='utf-8')
 
 
