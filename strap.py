@@ -9,7 +9,14 @@ import csv
 import os
 from pathlib import Path
 
+
+import pickle
+import sys
+import path
+
 import urllib
+import requests
+import io
 #displaying text#
 st.write ("hi streamlit world")
 st.header("--SUPER DEVELOPER--")
@@ -32,11 +39,18 @@ st.number_input("num")
 st.color_picker("colors")
 """ df = open('d:\\jpture.csv',"r")
 print(df.read()) """
-#df=open(r'jpture.csv',encoding="utf-8")  
+#df=pd.read_csv("https://raw.githubusercontent.com/mido2507/ahmed_developer/main/mido.csv")
+""" f=open(r"mido.csv","w") 
+df=open(r"mido.csv",encoding="unicode_escape")   """
 
-#df=pd.read_csv(r'c:/mido.csv',encoding='utf-8')
 
-
+df=pd.read_csv(r'c:/mido.csv',encoding='utf-8')
+#df=open(r'mido.csv',encoding="unicode_escape") 
+#df = pd.read_csv(r'mido.csv',encoding='unicode_escape')
+""" url="https://github.com/mido2507/ahmed_developer/blob/main/mido.csv"
+dd=requests.get(url).content
+df=pd.read_csv(io.StringIO(dd.decode('utf-8')))
+df.head() """
 
 
 #df = pd.read_csv(r'mido1.csv',encoding='unicode_escape')
