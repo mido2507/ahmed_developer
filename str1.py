@@ -30,7 +30,7 @@ st.time_input("now")
 st.number_input("num")
 st.color_picker("colors")
 
-df=pd.read_csv(r'jptur1.csv',encoding='unicode_escape')
+df=pd.read_csv(rC:'jptur1.csv',encoding='unicode_escape')
 st.write(df)
 """ f=open("jptur1.csv")
 f.read() """
