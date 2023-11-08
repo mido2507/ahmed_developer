@@ -30,9 +30,6 @@ st.time_input("now")
 st.number_input("num")
 st.color_picker("colors")
 
-path = os.path.dirname(__file__)
-df = path+'/jptur1.csv'
-
 df=pd.read_csv(r'c:\jptur1.csv',encoding='unicode_escape')
 st.write(df)
 """ f=open("jptur1.csv")
